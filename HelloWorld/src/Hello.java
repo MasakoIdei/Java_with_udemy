@@ -29,5 +29,25 @@ Javaだと、mainメゾット。
 public class Hello {
     public static void main(String[] args) {
         System.out.println("Hello,Tim");
+
+        //変数を利用しての計算
+        int myFristNumber = (5 + 10) + (2 * 10); //「；」をつけることでこの文（式）はここまでですと宣言している。
+        int mySecondNumber = 12;
+        int myThirdNumber = myFristNumber * 2;
+        int myTotal = myFristNumber + mySecondNumber + myThirdNumber;
+        System.out.println(myTotal);
+
+        //プチ課題
+        //myLastOneという変数に1000からmytotalの値を代入し、出力しよう。
+        int myLastOne = 1000 - myTotal;
+        System.out.println(myLastOne);
+
+
     }
 }
+/*
+変数…データを入れるための箱のような物。情報を保存する方法。
+　　実際の処理の時プログラムは、RAMやアクセスメモリに一次的に保存されて実行されているらしい。
+　※ランダムアクセスメモリ、RAM…メインメモリ、メモリと呼ばれる記憶装置。PCの電源がONの間だけ一時的に保存される（揮発性）
+　
+ */
