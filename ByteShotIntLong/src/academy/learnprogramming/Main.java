@@ -34,5 +34,16 @@ public class Main {
         int myMaxIntValue = Integer.MAX_VALUE; //int型の最大値を代入
         System.out.println("Int型の最小値 =" + myMinIntValue );
         System.out.println("Int型の最大値 =" + myMaxIntValue);
+
+        //最小値-2147483648　最大値2147483647　を超えた時の確認
+        System.out.println("Busted Max value = " + (myMaxIntValue + 1));
+        //表示結果　→ -2147483648
+        //式事態にはエラーは発生していないけれど、実行結果は何故かマイナス（オーバーフロー）
+        //入れようとした数が大きすぎる→PCは無理やり箱に収めようとした結果、オーバーフローを起こした。
+
+        System.out.println("Busted Min value =" + (myMinIntValue -1));
+        //最小値-1　→2147483647
+        //今度は評価結果が＋になった（アンダーフロー）
+
     }
 }
