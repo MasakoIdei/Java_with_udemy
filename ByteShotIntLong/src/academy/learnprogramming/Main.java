@@ -45,5 +45,18 @@ public class Main {
         //最小値-1　→2147483647
         //今度は評価結果が＋になった（アンダーフロー）
 
+        byte myMinBytevalue = Byte.MIN_VALUE;
+        byte myMaxBytevalue = Byte.MAX_VALUE;
+        System.out.println("Byteの最小値＝" + myMinBytevalue);
+        System.out.println("Byteの最大値＝" + myMaxBytevalue);
+
+
+        short myMinShortvalue = Short.MIN_VALUE;
+        short myMaxShortvalue = Short.MAX_VALUE;
+        System.out.println("Shortの最小値＝" + myMinShortvalue);
+        System.out.println("Shortの最大値＝" + myMaxShortvalue);
+        //int、byte、shortの大きさが違う=オーバーフローやアンダーフローが発生する数字も違う
+
+
     }
 }
